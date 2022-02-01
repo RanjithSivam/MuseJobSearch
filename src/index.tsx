@@ -1,12 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import JobSearch from 'view/JobSearch';
-import 'index.css';
-
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import JobSearch from "view/JobSearch";
+import JobProfile from "view/JobProfile";
+import "index.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <JobSearch />
+    <Router>
+      <Routes>
+        <Route path="/" element={<JobSearch />} />
+        <Route path="/:id" element={<JobProfile />} />
+      </Routes>
+    </Router>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );

@@ -24,6 +24,27 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {},
+          colors: {
+            transparent: "transparent",
+            white: "#ffffff",
+            black: "#000000",
+            grey: "#F6F7FB",
+            blue: "#1E86FF",
+            "light-grey": "#B9BDCF",
+            "dark-blue": "#334680"
+          },
+          fontFamily: {
+            poppins: "Poppins",
+            roboto: "Roboto"
+          }
+        }
+      };
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
