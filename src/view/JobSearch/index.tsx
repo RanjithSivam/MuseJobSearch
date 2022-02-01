@@ -6,7 +6,7 @@ import Skeleton from "component/Skeleton";
 import Card from "component/Card";
 import Select from "react-select";
 import makeAnimated from "react-select/animated";
-import { ValueType, ActionMeta } from "react-select";
+import { ActionMeta } from "react-select";
 
 const animatedComponents = makeAnimated();
 
@@ -122,7 +122,7 @@ const JobSearch: FC = () => {
               components={animatedComponents}
               isMulti
               options={categoryOption}
-              onChange={(e: ValueType) => setCategory(e)}
+              onChange={(e: any) => setCategory(e)}
             />
           </div>
           <div className="flex flex-col gap-2">
@@ -132,7 +132,7 @@ const JobSearch: FC = () => {
               components={animatedComponents}
               isMulti
               options={experienceOption}
-              onChange={(e: ValueType) => setExperience(e)}
+              onChange={(e: any) => setExperience(e)}
             />
           </div>
           <button
